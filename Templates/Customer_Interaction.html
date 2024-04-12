@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"] {
+            padding: 10px;
+            margin-bottom: 15px; /* Add margin between input fields */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JSCP Customer Details</h1>
+        <form action="/CustomerPOS" method="post">
+            <label for="Name">Customer Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter Customer Name" required>
+            <label for="bill">Bill Number:</label>
+            <input type="number" id="bill" name="bill1" placeholder="Enter bill number" required>
+            <label for="Amount">Amount:</label>
+            <input type="number" id="Amount" name="amount1" placeholder="Enter bill amount" required>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile1" placeholder="Enter mobile number" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
